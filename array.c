@@ -9,3 +9,4 @@ int main()
 	printf("%d\n",b);
 	}
 }
+//This is to find the squares of the numbers//
