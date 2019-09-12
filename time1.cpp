@@ -35,10 +35,12 @@ void Time::printStandard()
 int main()
 {
  Time t;
- t.setTime(12,25,30);
- cout << "Dinner Time will be held at ";
+ t.setTime(99,99,99);
+ cout << "\n\nAfter attempting invalid settings:\n"<<"\nMilitary time :";
+ t.printMilitary();
+ cout << "\nDinner Time will be held at ";
  t.printMilitary(); 
- cout << "military time,\nwhich is ";
+ cout << "military time,which is ";
  t.printStandard();
  cout<< "standard time.\n";
  return 0;
