@@ -1,0 +1,11 @@
+        -:    0:Source:add.c
+        -:    0:Graph:add.gcno
+        -:    0:Data:add.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include<stdio.h>
+        1:    2:int main()
+        -:    3:{
+        1:    4:	int a=2,b=3;
+        1:    5:	printf("The sum of no.s is %d\n",a+b);
+        -:    6:}
