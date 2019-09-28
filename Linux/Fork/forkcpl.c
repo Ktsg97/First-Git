@@ -6,19 +6,24 @@ int main(int argc,char *argv[])
 {
  if(argc != 2)
  {
-  printf("Enter Args");
-  exit(1);
+  fprintf(stderr,"Incorrect no of args\n");
+  return 1;
  } 
 
-
-int n = atoi(argv[1]);
-int i;
-for(i = 1;i<=n;i++)
+ pid_t cpid;
+ int n = atoi(argv[1]);
+ int i;
+ for(i = 1;i<=n;i++)
  {
-  fork();
+  //if(fork() !=0)
+  //{
+	fork();
+  //}
  }
- printf("PUCIT \n");
- exit(0);
+ fprintf(stderr,"PID: %d ,PPID: %d\n",(long)getpid(),
+(long)getppid());
+ while(1);
+ return 0;
 } 
  
  
