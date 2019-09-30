@@ -1,0 +1,1 @@
+cmd_/home/student/Selva/Linux/Kernel/USB/usb2.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/student/Selva/Linux/Kernel/USB/usb2.ko /home/student/Selva/Linux/Kernel/USB/usb2.o /home/student/Selva/Linux/Kernel/USB/usb2.mod.o
