@@ -15,7 +15,7 @@ return 0;//return 0 indicates we will mange this device
 //disconnect
 static void pen_disconnect(struct usb_interface *interface)
 {
-printk(KERN_INFO "[*] Nisha Pen drive removed\n");
+printk(KERN_INFO "[*] Ktsg Pen drive removed\n");
 }
 
 
@@ -35,7 +35,7 @@ MODULE_DEVICE_TABLE(usb,pen_table);
 //usb driver
 static struct usb_driver pen_driver=
 {
-.name="Nisha-USB Stick-Driver",
+.name="Ktsg-USB Stick-Driver",
 .id_table=pen_table,
 .probe=pen_probe,
 .disconnect=pen_disconnect,
@@ -59,14 +59,14 @@ static void __exit pen_exit(void)
 //deregister
 printk(KERN_INFO "[*]Destructor of driver");
 usb_deregister(&pen_driver);
-printk(KERN_INFO "\tunregisteration complete");
+printk(KERN_INFO "\tUnregisteration complete");
 }
 
 module_init(pen_init);
 module_exit(pen_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Nisha Mathew");
+MODULE_AUTHOR("Ktsg");
 MODULE_DESCRIPTION("USB Pen Registration Driver");
 MODULE_VERSION("0.1");
 
