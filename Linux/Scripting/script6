@@ -1,0 +1,10 @@
+# Using Switch Case
+
+echo "Enter choice: ";
+read choice;
+case $choice in
+ 1) ls -l ;;
+ 2) hostname -I;;
+ 3) sh script6;;
+ *) exit;;
+esac

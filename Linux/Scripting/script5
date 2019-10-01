@@ -1,0 +1,8 @@
+# For Loop
+
+echo "Enter value: ";
+read val;
+for i in `seq 10`
+do
+ echo "$i*val = "`expr $i \* $val`;
+done;

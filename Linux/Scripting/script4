@@ -1,0 +1,14 @@
+#Loops
+
+ans="y";
+while [ $ans = "y" ]
+do
+ clear;
+ echo "Name: ";
+ read name;
+ echo "No: ";
+ read num;
+ echo $name $num >> a;
+ echo "Do you want to continue ?";
+ read ans;
+done
